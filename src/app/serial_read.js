@@ -133,8 +133,8 @@ async function main(port, args) {
 if (require.main === module) {
   // Create argument parser to handle command line arguments.
   const parser = new argparse.ArgumentParser({ description: 'Connection information' });
-  parser.addArgument('--url', { dest: 'url', type: 'string', help: 'url of node server' });
-  const args = parser.parseArgs();
+  parser.add_argument('--url', { dest: 'url', type: 'string', help: 'url of node server' });
+  const args = parser.parse_args();
 
   // Get list of serial ports.
   getSerialPorts((err, ports) => {

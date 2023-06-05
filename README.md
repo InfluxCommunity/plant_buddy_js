@@ -26,7 +26,7 @@ or
 
 ## Installation
 ```
-
+npm install
 ```
 
 ## Setup
@@ -50,7 +50,8 @@ port = '/dev/tty.usbmodem141101'
 
 To run the project:
 ```
-
+cd src/app
+node app.js
 ```
 
 
